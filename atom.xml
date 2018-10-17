@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://gaogew.github.io/"/>
-  <updated>2018-10-16T14:16:45.660Z</updated>
+  <updated>2018-10-17T17:44:05.842Z</updated>
   <id>http://gaogew.github.io/</id>
   
   <author>
@@ -17,25 +17,30 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://gaogew.github.io/2018/10/16/hello-world/"/>
-    <id>http://gaogew.github.io/2018/10/16/hello-world/</id>
-    <published>2018-10-16T14:16:45.660Z</published>
-    <updated>2018-10-16T14:16:45.660Z</updated>
+    <title>JVM要点概述</title>
+    <link href="http://gaogew.github.io/2018/10/16/JVM%E8%A6%81%E7%82%B9%E6%A6%82%E8%BF%B0/"/>
+    <id>http://gaogew.github.io/2018/10/16/JVM要点概述/</id>
+    <published>2018-10-15T19:36:06.000Z</published>
+    <updated>2018-10-17T17:44:05.842Z</updated>
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+      记录学习JVM中的一些知识点，方便温习
     
     </summary>
     
-      <category term="Testing" scheme="http://gaogew.github.io/categories/Testing/"/>
+      <category term="读书笔记" scheme="http://gaogew.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="java" scheme="http://gaogew.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/java/"/>
     
     
-      <category term="Testing" scheme="http://gaogew.github.io/tags/Testing/"/>
+      <category term="Reading" scheme="http://gaogew.github.io/tags/Reading/"/>
     
-      <category term="Another Tag" scheme="http://gaogew.github.io/tags/Another-Tag/"/>
+      <category term="Develop" scheme="http://gaogew.github.io/tags/Develop/"/>
+    
+      <category term="Java" scheme="http://gaogew.github.io/tags/Java/"/>
+    
+      <category term="Jvm" scheme="http://gaogew.github.io/tags/Jvm/"/>
     
   </entry>
   
