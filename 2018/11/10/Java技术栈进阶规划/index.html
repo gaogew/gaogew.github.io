@@ -1,0 +1,1375 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+  <meta name="google-site-verification" content="yya_qOIrId9478gsfvApI3kzku5jFgkBUFG9TqG4vXM" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/panghu2.jpeg?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/panghu.jpeg?v=5.1.4">
+
+
+
+
+
+
+  <meta name="keywords" content="Java,Develop," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="Gaoge's blogs" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="java技术栈及后端进阶之路，任重而道远">
+<meta name="keywords" content="Java,Develop">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java技术栈进阶规划">
+<meta property="og:url" content="http://gaogew.github.io/2018/11/10/Java技术栈进阶规划/index.html">
+<meta property="og:site_name" content="Gaoge&#39;s blogs">
+<meta property="og:description" content="java技术栈及后端进阶之路，任重而道远">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-10T00:42:10.528Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Java技术栈进阶规划">
+<meta name="twitter:description" content="java技术栈及后端进阶之路，任重而道远">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: 'YQ27R7WUSD',
+      apiKey: 'bf2cc5b50606b3cb40766477ff750bc9',
+      indexName: 'hexo-next-blog-index',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://gaogew.github.io/2018/11/10/Java技术栈进阶规划/"/>
+
+
+
+
+
+  <title>Java技术栈进阶规划 | Gaoge's blogs</title>
+  
+
+
+
+
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?315ccbeee1e6597f2d2f3180a1210fbf";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="default">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Gaoge's blogs</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <h1 class="site-subtitle" itemprop="description">writing the words, remembering the back</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            Commonweal 404
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://gaogew.github.io/2018/11/10/Java技术栈进阶规划/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Gaoge">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/panghu.jpeg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gaoge's blogs">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">Java技术栈进阶规划</h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-10T08:29:01+08:00">
+                2018-11-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/" itemprop="url" rel="index">
+                    <span itemprop="name">java</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/java/plan/" itemprop="url" rel="index">
+                    <span itemprop="name">plan</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/10/Java技术栈进阶规划/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/10/Java技术栈进阶规划/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2018/11/10/Java技术栈进阶规划/" class="leancloud_visitors" data-flag-title="Java技术栈进阶规划">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+              <div class="post-description">
+                  java技术栈及后端进阶之路，任重而道远
+              </div>
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>Step1: JVM<br>Step2: Operation System<br>Step3: JDK source code<br>Step4: Linux system<br>Step5: Network<br>Step6: Framework and component of background<br>Step7: Understand the front-end<br>Step8: AI and ML and the world<br>Always: Data structure and Algorithm</p>
+</blockquote>
+<h1 id="hashMap源码分析"><a href="#hashMap源码分析" class="headerlink" title="hashMap源码分析"></a>hashMap源码分析</h1><h2 id="继承结构"><a href="#继承结构" class="headerlink" title="继承结构"></a>继承结构</h2><ul>
+<li>Map</li>
+<li>AbstractMap</li>
+<li>Cloneable</li>
+<li>Serializable</li>
+</ul>
+<h2 id="内部数据结构详解"><a href="#内部数据结构详解" class="headerlink" title="内部数据结构详解"></a>内部数据结构详解</h2><ul>
+<li>Node&lt;K, V&gt; implements Map.Entry&lt;K, V&gt;(Map内定义的一个内部接口)</li>
+<li>TreeNode&lt;K, V&gt; extends LinkedHashMap.Entry&lt;K,V&gt; extends HashMap.Node&lt;K,V&gt;</li>
+<li>KeySet extends AbstractSet<k></k></li>
+<li>Values extends AbstractCollection<v></v></li>
+<li>EntrySet extends AbstractSet&lt;Map.Entry&lt;K,V&gt;&gt;</li>
+<li>HashIterator</li>
+<li>KeyIterator extends HashIterator implements Iterator<k> </k></li>
+<li>ValueIterator extends HashIterator implements Iterator<v></v></li>
+<li>HashMapSpliterator&lt;K,V&gt;</li>
+<li>KeySpliterator&lt;K,V&gt; extends HashMapSpliterator&lt;K,V&gt; implements Spliterator<k></k></li>
+<li>ValueSpliterator&lt;K,V&gt; extends HashMapSpliterator&lt;K,V&gt; implements Spliterator<v></v></li>
+<li>EntrySpliterator&lt;K,V&gt; extends HashMapSpliterator&lt;K,V&gt; implements Spliterator&lt;Map.Entry&lt;K,V&gt;&gt; </li>
+</ul>
+<h2 id="核心方法详解"><a href="#核心方法详解" class="headerlink" title="核心方法详解"></a>核心方法详解</h2><ul>
+<li>putVal(int hash, K key, V value, boolean onlyIfAbsent, boolean evict)</li>
+<li>resize()</li>
+<li>getNode(int hash, Object key)</li>
+<li>tableSizeFor(int cap)</li>
+<li>treeifyBin(Node&lt;K,V&gt;[] tab, int hash)</li>
+<li>removeNode(int hash, Object key, Object value, boolean matchValue, boolean movable) </li>
+</ul>
+<h2 id="参数详解"><a href="#参数详解" class="headerlink" title="参数详解"></a>参数详解</h2><ul>
+<li>DEFAULT_INITIAL_CAPACITY = 1 &lt;&lt; 4</li>
+<li>MAXIMUM_CAPACITY = 1 &lt;&lt; 30</li>
+<li>DEFAULT_LOAD_FACTOR = 0.75f</li>
+<li>TREEIFY_THRESHOLD = 8</li>
+<li>UNTREEIFY_THRESHOLD = 6</li>
+<li>MIN_TREEIFY_CAPACITY = 64</li>
+<li>Node&lt;K,V&gt;[] table</li>
+<li>Set&lt;Map.Entry&lt;K,V&gt;&gt; entrySet</li>
+<li>threshold</li>
+<li>loadFactor</li>
+</ul>
+<h1 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h1><h2 id="MySQL技术架构"><a href="#MySQL技术架构" class="headerlink" title="MySQL技术架构"></a>MySQL技术架构</h2><ul>
+<li>connectors</li>
+<li>parser</li>
+<li>optimizer</li>
+<li>cache</li>
+<li>store engine</li>
+</ul>
+<h2 id="存储引擎"><a href="#存储引擎" class="headerlink" title="存储引擎"></a>存储引擎</h2><ul>
+<li>InnoDB</li>
+<li>MyISAM</li>
+<li>Memory</li>
+<li>Archive</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">InnoDB 支持事务，支持行级别锁定，支持 B-tree、Full-text 等索引，不支持 Hash 索引；</span><br><span class="line">MyISAM 不支持事务，支持表级别锁定，支持 B-tree、Full-text 等索引，不支持 Hash 索引；</span><br><span class="line">Memory 不支持事务，支持表级别锁定，支持 B-tree、Hash 等索引，不支持 Full-text 索引；</span><br><span class="line">NDB 支持事务，支持行级别锁定，支持 Hash 索引，不支持 B-tree、Full-text 等索引；</span><br><span class="line">Archive 不支持事务，支持表级别锁定，不支持 B-tree、Hash、Full-text 等索引</span><br></pre></td></tr></table></figure>
+<h2 id="事务"><a href="#事务" class="headerlink" title="事务"></a>事务</h2><ul>
+<li>ACID</li>
+<li>四个隔离级别<ul>
+<li>Read-uncommited</li>
+<li>Read-commited</li>
+<li>Reapitable-read</li>
+<li>Serialized</li>
+</ul>
+</li>
+</ul>
+<h2 id="索引"><a href="#索引" class="headerlink" title="索引"></a>索引</h2><ul>
+<li>数据结构 B+tree</li>
+<li>索引分类<ul>
+<li>主键 primary key</li>
+<li>唯一索引 unique key</li>
+<li>普通索引 index</li>
+<li>联合索引 </li>
+<li>全文索引 fulltext</li>
+<li>空间索引 spatial</li>
+</ul>
+</li>
+</ul>
+<h2 id="MySQL优化"><a href="#MySQL优化" class="headerlink" title="MySQL优化"></a>MySQL优化</h2><ul>
+<li>最左匹配原则: B+tree按联合索引的由左到右顺序建立索引</li>
+<li>=和in可以乱序</li>
+<li>尽量选择区分度高的列作为索引,区分度的公式是count(distinct col)/count(*)</li>
+<li>索引列不能参与计算，保持列“干净”，比如from_unixtime(create_time) = ’2014-05-29’</li>
+<li><p>无法命中：</p>
+<ul>
+<li>like ‘%xx’</li>
+<li>使用函数</li>
+<li>类型不一致，存储string，搜索却用int</li>
+<li>!= 只有主键可以走索引</li>
+<li><blockquote>
+<p>&lt; 如果索引是整数才会走索引</p>
+</blockquote>
+</li>
+<li>排序条件为索引，则select字段必须也是索引字段，否则无法命中，主键除外</li>
+</ul>
+</li>
+<li><p>优化建议</p>
+<ul>
+<li>避免使用select *</li>
+<li>count(1)或count(列) 代替 count(*)</li>
+<li>创建表时尽量时 char 代替 varchar</li>
+<li>表的字段顺序固定长度的字段优先</li>
+<li>组合索引代替多个单列索引（经常使用多个条件查询时）</li>
+<li>尽量使用短索引</li>
+<li>使用连接（JOIN）来代替子查询(Sub-Queries)</li>
+<li>连表时注意条件类型需一致</li>
+<li>索引散列值（重复少）不适合建索引，例：性别不适合</li>
+</ul>
+</li>
+</ul>
+<h2 id="慢查询分析优化"><a href="#慢查询分析优化" class="headerlink" title="慢查询分析优化"></a>慢查询分析优化</h2><ol start="0">
+<li>先运行看看是否真的很慢，注意设置SQL_NO_CACHE</li>
+<li>where条件单表查，锁定最小返回记录表。这句话的意思是把查询语句的where都应用到表中返回的记录数最小的表开始查起，单表每个字段分别查询，看哪个字段的区分度最高</li>
+<li>explain查看执行计划，是否与1预期一致（从锁定记录较少的表开始查询）</li>
+<li>order by limit 形式的sql语句让排序的表优先查</li>
+<li>了解业务方使用场景</li>
+<li>加索引时参照建索引的几大原则</li>
+<li>观察结果，不符合预期继续从0分析</li>
+</ol>
+<h1 id="Spring"><a href="#Spring" class="headerlink" title="Spring"></a>Spring</h1><h1 id="Kafka"><a href="#Kafka" class="headerlink" title="Kafka"></a>Kafka</h1><h1 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h1><h1 id="Dubbo原理"><a href="#Dubbo原理" class="headerlink" title="Dubbo原理"></a>Dubbo原理</h1><h1 id="Zookeeper原理"><a href="#Zookeeper原理" class="headerlink" title="Zookeeper原理"></a>Zookeeper原理</h1><h1 id="Spring-boot原理"><a href="#Spring-boot原理" class="headerlink" title="Spring-boot原理"></a>Spring-boot原理</h1><h1 id="锁"><a href="#锁" class="headerlink" title="锁"></a>锁</h1><ul>
+<li>乐观锁</li>
+<li>悲观锁</li>
+<li>共享锁</li>
+<li>排它锁</li>
+</ul>
+<h1 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h1><ul>
+<li>内存模型</li>
+<li>垃圾收集</li>
+<li>类加载</li>
+</ul>
+<h1 id="并发"><a href="#并发" class="headerlink" title="并发"></a>并发</h1><h2 id="产生分析"><a href="#产生分析" class="headerlink" title="产生分析"></a>产生分析</h2><ul>
+<li>计算机的运算速度与存储、通信子系统的差距太大，大量时间花费在磁盘I/O、网络通信、数据库访问上。</li>
+<li>解决处理器等待其他资源就绪的问题</li>
+<li>为了解决一致性的问题，需要各个处理器访问缓存时都遵循一些协议，在读写时要根 据协议来进行操作，这类协议有MSI、MESI（Illinois Protocol）、MOSI、Synapse、Firefly及 Dragon Protocol等</li>
+</ul>
+<h2 id="JMM-java内存模型"><a href="#JMM-java内存模型" class="headerlink" title="JMM java内存模型"></a>JMM <em>java内存模型</em></h2><ul>
+<li>屏蔽掉各种硬件和操作系统的内存访问差异，以实现让Java程序在各种平台下都能达到一致的内存访问效果</li>
+<li>主要目标是定义程序中各个<strong>共享变量</strong>的访问规则</li>
+<li>规定了所有的变量都存储在(JMM概念)主内存（Main Memory）中，类比物理机主内存</li>
+<li>每条线程还有自己的工作内存（Working Memory，可与处理器高速缓存类比）</li>
+</ul>
+<h3 id="内存间交互操作"><a href="#内存间交互操作" class="headerlink" title="内存间交互操作"></a>内存间交互操作</h3><ol>
+<li>主内存与工作内存的交互协议，JMM定义了8种操作<ul>
+<li>lock（锁定）：作用于主内存的变量，它把一个变量标识为一条线程独占的状态</li>
+<li>unlock（解锁）：lock反向操作</li>
+<li>read（读取）：作用于主内存的变量，它把一个变量的值从主内存传输到线程的工作内存中，以便随后的load动作使用</li>
+<li>load（载入）：作用于工作内存的变量，它把read操作从主内存中得到的变量值放入工作内存的变量副本中</li>
+<li>use（使用）：作用于工作内存的变量，它把工作内存中一个变量的值传递给执行引 擎，每当虚拟机遇到一个需要使用到变量的值的字节码指令时将会执行这个操作。</li>
+<li>assign（赋值）：作用于工作内存的变量，它把一个从执行引擎接收到的值赋给工作内 存的变量，每当虚拟机遇到一个给变量赋值的字节码指令时执行这个操作。</li>
+<li>store（存储）：作用于工作内存的变量，它把工作内存中一个变量的值传送到主内存 中，以便随后的write操作使用。</li>
+<li>write（写入）：作用于主内存的变量，它把store操作从工作内存中得到的变量的值放入 主内存的变量中。</li>
+</ul>
+</li>
+<li>操作规则<ul>
+<li>不允许read和load、store和write操作之一单独出现</li>
+<li>不允许一个线程丢弃它的最近的assign操作</li>
+<li>不允许一个线程无原因地（没有发生过任何assign操作）把数据从线程的工作内存同步 回主内存中</li>
+<li>一个新的变量只能在主内存中“诞生”，不允许在工作内存中直接使用一个未被初始化 （load或assign）的变量，换句话说，就是对一个变量实施use、store操作之前，必须先执行 过了assign和load操作。</li>
+<li>一个变量在同一个时刻只允许一条线程对其进行lock操作，但lock操作可以被同一条线 程重复执行多次，多次执行lock后，只有执行相同次数的unlock操作，变量才会被解锁。</li>
+<li>如果一个变量事先没有被lock操作锁定，那就不允许对它执行unlock操作，也不允许去 unlock一个被其他线程锁定住的变量。</li>
+<li>对一个变量执行unlock操作之前，必须先把此变量同步回主内存中（执行store、write操作）</li>
+</ul>
+</li>
+<li><p>volatile</p>
+<ul>
+<li>定义为volatile的变量有两种特性<ul>
+<li>保证此变量对所有线程的可见性:一条线程修改了变量的值，新值对其他线程来说是可以立即得知的</li>
+<li>禁止指令重排序优化：在一个线程的方法执行过程中无法感知到变量赋值操作的顺序与程序代码中的执行顺序一致，这 也就是Java内存模型中描述的所谓的“线程内表现为串行的语义”（Within-Thread As-If-Serial Semantics）</li>
+</ul>
+</li>
+<li><p>实现：lock addl $0x0, (%esp) ，IA32手册：作用是使得本CPU的Cache写入了内存，</p>
+</li>
+<li><p>-XX:+UnlockDiagnosticVMOptions -XX:+PrintAssembly参数输出反汇编</p>
+</li>
+</ul>
+</li>
+<li><p>this引用逃逸是一件恒危险的事情，其他线程有可能通过这个引用访问到“初始化了一半”的对象</p>
+</li>
+<li><p>概念</p>
+<ul>
+<li>原子性</li>
+<li>可见性</li>
+<li>有序性</li>
+</ul>
+</li>
+<li><p>先行发生关系</p>
+<ul>
+<li>程序次序规则（Program Order Rule）：在一个线程内，按照程序代码顺序，书写在前面 的操作先行发生于书写在后面的操作。准确地说，应该是控制流顺序而不是程序代码顺序， 因为要考虑分支、循环等结构。</li>
+<li>管程锁定规则（Monitor Lock Rule）：一个unlock操作先行发生于后面对同一个锁的lock 操作。这里必须强调的是同一个锁，而“后面”是指时间上的先后顺序。</li>
+<li>线程启动规则（Thread Start Rule）：Thread对象的start（）方法先行发生于此线程的每 一个动作。</li>
+<li>线程终止规则（Thread Termination Rule）：线程中的所有操作都先行发生于对此线程的 终止检测，我们可以通过Thread.join（）方法结束、Thread.isAlive（）的返回值等手段检测 到线程已经终止执行。</li>
+<li>线程中断规则（Thread Interruption Rule）：对线程interrupt（）方法的调用先行发生于被 中断线程的代码检测到中断事件的发生，可以通过Thread.interrupted（）方法检测到是否有 中断发生。</li>
+<li>对象终结规则（Finalizer Rule）：一个对象的初始化完成（构造函数执行结束）先行发 生于它的finalize（）方法的开始</li>
+<li>传递性（Transitivity）：如果操作A先行发生于操作B，操作B先行发生于操作C，那就 可以得出操作A先行发生于操作C的结论。</li>
+</ul>
+</li>
+<li>线程实现<ul>
+<li>使用内核线程实现：内核级线程（Kernel-level Threads，KLT）的高级接口调用——轻量级进程（Light-Weight Process，LWP)，对应关系1:1</li>
+<li>使用用户线程实现：广义：不是内核线程就是用户线程。狭义：完全建立在用户空间的线程库上，系统内核不能感知线程存在。没有系统内核的支援，所有线程操作都要用户线程自己处理。基本被放弃</li>
+<li>使用用户线程+轻量级进程混合实现。将内核线程与用户线程一起使用的实现方式。对应关系N:M</li>
+<li>Java线程实现：1.2之前GreenThreads，1.2用基于操作系统原生线程模型来实现。windows与linux中使用的都是一对一线程模型，solaris可以同时支持1对1和多对多的关系。-XX:+UseLWPSynchronization和-XX:+UseBoundThreads</li>
+</ul>
+</li>
+<li><p>java线程调度： 系统为线程分配处理器使用权的过程</p>
+<ul>
+<li><strong>协同式线程调度</strong>（Cooperative Threads-Scheduling):线程的执行时间由线程本身来控制，自己的工作执行完成了之后，主动通知系统切换到另外一个线程上。最大好处是实现简单，坏处是执行时间不可控制。</li>
+<li><strong>抢占式线程调度</strong>（Preemptive Threads-Scheduling)：每个线程将由系统来分配执行时间。Java中Thread.yield()可以让出执行时间，但是要获取执行时间的话，线程本身没有什么办法。线程执行时间可控。</li>
+<li>线程优先级：java有10个级别的线程优先级(Thread.MIN_PRIORITY到Thread.MAX_PRIORITY)，在两个线程同时处于Ready状态时，优先级越高的线程越容易被系统选择执行。</li>
+<li>状态转换：5种状态转换<ul>
+<li><strong>New</strong></li>
+<li><strong>Runable</strong>: 包括了操作系统线程状态中的Running和Ready，可能在执行，也可能在等待着CPU为它分配执行时间。</li>
+<li><strong>无限期等待（Waiting）</strong>：不会被CPU分配执行时间，等待被其他线程显式唤醒。Object.wait(),Thread.join()没有设置Timeout参数。LockSupport.park();</li>
+<li><strong>限期等待（Timed Waiting）</strong>：等待自动唤醒-&gt;Thread.sleep(), 设置了Timeout的Object.wait()和Thread.join()，LockSupport.parkNanos(), LockSupport.parkUntil()</li>
+<li><strong>阻塞(Blocked)</strong>:阻塞状态与等待状态的区别：阻塞，等待着获取到一个排它锁，这个事件将在另外一个线程放弃这个锁的时候发生。而等待状态这是等待一段时间或者唤醒动作的发生。在程序等待进入同步区域的时候，线程将进入这种状态。</li>
+<li><strong>结束（Terminated）</strong>：已终止线程的状态，结束执行。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>线程安全</p>
+<ul>
+<li>不可变：final修饰，对象中带有状态的变量都使用final</li>
+<li>绝对线程安全：不管运行环境如何，调用者都不需要任何额外的同步措施。</li>
+<li>线程相对安全</li>
+<li>线程兼容</li>
+<li>线程对立</li>
+</ul>
+</li>
+<li>线程安全的实现方法<ul>
+<li>互斥同步（Mutual Exclusion &amp; Synchronization)：临界区、互斥量（Mutex）和信号量（Semaphore).</li>
+<li>非阻塞同步：硬件将多次操作的行为只通过一条处理器指令就完成<ul>
+<li>测试并设置（Test-and-Set）</li>
+<li>获取并增加（Fetch-and-Increment）</li>
+<li>交换（Swap）</li>
+<li>比较并交换（Compare-and-Swap，CAS)</li>
+<li>加载链接/条件存储（Load-Linked/Store-Conditional,LL/SC)</li>
+</ul>
+</li>
+<li>无同步方案<ul>
+<li>可重入代码：纯代码</li>
+<li>线程本地存储</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>锁优化<ul>
+<li>自旋锁与自适应性自旋</li>
+<li>锁消除</li>
+<li>锁粗化</li>
+<li>轻量级锁</li>
+</ul>
+</li>
+<li>volatile</li>
+<li>sychronized</li>
+<li>Lock</li>
+<li>线程池</li>
+</ul>
+<h1 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h1><ul>
+<li>搜索二叉树</li>
+<li>平衡二叉树</li>
+<li>红黑树</li>
+<li>B-树</li>
+<li>B+树</li>
+<li>B*树</li>
+<li>跳跃表</li>
+<li>图</li>
+<li>排序算法</li>
+</ul>
+<h1 id="序列化与反序列化"><a href="#序列化与反序列化" class="headerlink" title="序列化与反序列化"></a>序列化与反序列化</h1><h1 id="IO"><a href="#IO" class="headerlink" title="IO"></a>IO</h1><h1 id="注解"><a href="#注解" class="headerlink" title="注解"></a>注解</h1><h1 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h1><h1 id="OSGI"><a href="#OSGI" class="headerlink" title="OSGI"></a>OSGI</h1>
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>Donate me</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpeg" alt="Gaoge WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/alipay.jpeg" alt="Gaoge Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Java/" rel="tag"># Java</a>
+          
+            <a href="/tags/Develop/" rel="tag"># Develop</a>
+          
+        </div>
+      
+
+      
+      
+        <div class="post-widgets">
+        
+
+        
+
+        
+          
+          <div id="needsharebutton-postbottom">
+            <span class="btn">
+              <i class="fa fa-share-alt" aria-hidden="true"></i>
+            </span>
+          </div>
+        
+        </div>
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/21/Java异常和错误详解/" rel="next" title="Java异常详解">
+                <i class="fa fa-chevron-left"></i> Java异常详解
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/panghu.jpeg"
+                alt="Gaoge" />
+            
+              <p class="site-author-name" itemprop="name">Gaoge</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/gaogew" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:hugaowei123@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#hashMap源码分析"><span class="nav-number">1.</span> <span class="nav-text">hashMap源码分析</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#继承结构"><span class="nav-number">1.1.</span> <span class="nav-text">继承结构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#内部数据结构详解"><span class="nav-number">1.2.</span> <span class="nav-text">内部数据结构详解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#核心方法详解"><span class="nav-number">1.3.</span> <span class="nav-text">核心方法详解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参数详解"><span class="nav-number">1.4.</span> <span class="nav-text">参数详解</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#MySQL"><span class="nav-number">2.</span> <span class="nav-text">MySQL</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#MySQL技术架构"><span class="nav-number">2.1.</span> <span class="nav-text">MySQL技术架构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#存储引擎"><span class="nav-number">2.2.</span> <span class="nav-text">存储引擎</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#事务"><span class="nav-number">2.3.</span> <span class="nav-text">事务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#索引"><span class="nav-number">2.4.</span> <span class="nav-text">索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MySQL优化"><span class="nav-number">2.5.</span> <span class="nav-text">MySQL优化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#慢查询分析优化"><span class="nav-number">2.6.</span> <span class="nav-text">慢查询分析优化</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring"><span class="nav-number">3.</span> <span class="nav-text">Spring</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Kafka"><span class="nav-number">4.</span> <span class="nav-text">Kafka</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Redis"><span class="nav-number">5.</span> <span class="nav-text">Redis</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Dubbo原理"><span class="nav-number">6.</span> <span class="nav-text">Dubbo原理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Zookeeper原理"><span class="nav-number">7.</span> <span class="nav-text">Zookeeper原理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Spring-boot原理"><span class="nav-number">8.</span> <span class="nav-text">Spring-boot原理</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#锁"><span class="nav-number">9.</span> <span class="nav-text">锁</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JVM"><span class="nav-number">10.</span> <span class="nav-text">JVM</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#并发"><span class="nav-number">11.</span> <span class="nav-text">并发</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#产生分析"><span class="nav-number">11.1.</span> <span class="nav-text">产生分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JMM-java内存模型"><span class="nav-number">11.2.</span> <span class="nav-text">JMM java内存模型</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#内存间交互操作"><span class="nav-number">11.2.1.</span> <span class="nav-text">内存间交互操作</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数据结构"><span class="nav-number">12.</span> <span class="nav-text">数据结构</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#序列化与反序列化"><span class="nav-number">13.</span> <span class="nav-text">序列化与反序列化</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#IO"><span class="nav-number">14.</span> <span class="nav-text">IO</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#注解"><span class="nav-number">15.</span> <span class="nav-text">注解</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#反射"><span class="nav-number">16.</span> <span class="nav-text">反射</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#OSGI"><span class="nav-number">17.</span> <span class="nav-text">OSGI</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Gaoge</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+      <div id="needsharebutton-float">
+        <span class="btn">
+          <i class="fa fa-share-alt" aria-hidden="true"></i>
+        </span>
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: '53c1H9QH4uOgLYrdtcaA0WMH-gzGzoHsz',
+        appKey: '6J4Qu4k41OiJOyCqLI10KAuo',
+        placeholder: 'Just go go',
+        avatar:'/images/panghu.jpeg',
+        guest_info:guest,
+        pageSize:'6' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.4.js"></script>
+  <script>AV.initialize("53c1H9QH4uOgLYrdtcaA0WMH-gzGzoHsz", "6J4Qu4k41OiJOyCqLI10KAuo");</script>
+  <script>
+    function showTime(Counter) {
+      var query = new AV.Query(Counter);
+      var entries = [];
+      var $visitors = $(".leancloud_visitors");
+
+      $visitors.each(function () {
+        entries.push( $(this).attr("id").trim() );
+      });
+
+      query.containedIn('url', entries);
+      query.find()
+        .done(function (results) {
+          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
+
+          if (results.length === 0) {
+            $visitors.find(COUNT_CONTAINER_REF).text(0);
+            return;
+          }
+
+          for (var i = 0; i < results.length; i++) {
+            var item = results[i];
+            var url = item.get('url');
+            var time = item.get('time');
+            var element = document.getElementById(url);
+
+            $(element).find(COUNT_CONTAINER_REF).text(time);
+          }
+          for(var i = 0; i < entries.length; i++) {
+            var url = entries[i];
+            var element = document.getElementById(url);
+            var countSpan = $(element).find(COUNT_CONTAINER_REF);
+            if( countSpan.text() == '') {
+              countSpan.text(0);
+            }
+          }
+        })
+        .fail(function (object, error) {
+          console.log("Error: " + error.code + " " + error.message);
+        });
+    }
+
+    function addCount(Counter) {
+      var $visitors = $(".leancloud_visitors");
+      var url = $visitors.attr('id').trim();
+      var title = $visitors.attr('data-flag-title').trim();
+      var query = new AV.Query(Counter);
+
+      query.equalTo("url", url);
+      query.find({
+        success: function(results) {
+          if (results.length > 0) {
+            var counter = results[0];
+            counter.fetchWhenSave(true);
+            counter.increment("time");
+            counter.save(null, {
+              success: function(counter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(counter.get('time'));
+              },
+              error: function(counter, error) {
+                console.log('Failed to save Visitor num, with error message: ' + error.message);
+              }
+            });
+          } else {
+            var newcounter = new Counter();
+            /* Set ACL */
+            var acl = new AV.ACL();
+            acl.setPublicReadAccess(true);
+            acl.setPublicWriteAccess(true);
+            newcounter.setACL(acl);
+            /* End Set ACL */
+            newcounter.set("title", title);
+            newcounter.set("url", url);
+            newcounter.set("time", 1);
+            newcounter.save(null, {
+              success: function(newcounter) {
+                var $element = $(document.getElementById(url));
+                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
+              },
+              error: function(newcounter, error) {
+                console.log('Failed to create');
+              }
+            });
+          }
+        },
+        error: function(error) {
+          console.log('Error:' + error.code + " " + error.message);
+        }
+      });
+    }
+
+    $(function() {
+      var Counter = AV.Object.extend("Counter");
+      if ($('.leancloud_visitors').length == 1) {
+        addCount(Counter);
+      } else if ($('.post-title-link').length > 1) {
+        showTime(Counter);
+      }
+    });
+  </script>
+
+
+
+  
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+      pbOptions = {};
+      
+          pbOptions.iconStyle = "box";
+      
+          pbOptions.boxForm = "horizontal";
+      
+          pbOptions.position = "bottomCenter";
+      
+          pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+    
+    
+      flOptions = {};
+      
+          flOptions.iconStyle = "box";
+      
+          flOptions.boxForm = "horizontal";
+      
+          flOptions.position = "middleRight";
+      
+          flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+      
+      new needShareButton('#needsharebutton-float', flOptions);
+    
+  </script>
+
+  
+
+  
+  
+
+
+  
+
+  
+
+</body>
+</html>
